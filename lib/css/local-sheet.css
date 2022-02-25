@@ -1,0 +1,149 @@
+table{
+  user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select: none;
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-drag:none;
+  -khtml-user-drag:none;
+}
+
+.disable{
+  background-color: #e6e6fa;
+}
+
+.table-frame{
+  height: 20px;
+  background-color: #dcdcdc;
+  width: 20em;
+}
+.table-frame-left{
+ width: 5%;
+}
+
+table,th,td {
+  border: 1px solid darkgray;
+  border-collapse: collapse;
+}
+
+th {
+  color:blue;
+  background-color: #aaffcc;
+}
+
+.cell-focus{
+//  border-color: #0000ff !important;
+//  border-width: 2px !important;
+//  border-style: solid;
+//  padding : 2px;
+//  background-color: rgba(0,0,255,0.1) !important;
+  background-color: rgba(0,103,192,0.3) !important;
+
+
+
+}
+
+.border-less{
+  border:solid 0px;
+  outline: none;
+}
+
+
+
+#conmenu{
+  display:none;
+  position:fixed;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:100px;
+  border:1px solid #000;
+  background-color:#fff;
+}
+#conmenu li{
+  cursor:pointer;
+}
+#conmenu li:hover {
+  background-color: #8AC75A;
+  transition: background-color 100ms;
+}
+
+
+
+body {
+  font-family: serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.button {
+  background: lightblue;
+  color: #fff;
+  padding: 0 2em;
+  border: 0;
+  width: 500px;
+  height: 100px;
+  font-size: 45px;
+  border-radius: 5px;
+  font-weight: 900;
+  position: relative;
+  left: 400px;
+  top: 260px;
+  font-family: serif;
+}
+
+.button:hover {
+  background: lightcoral;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 80%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.modal-header h1 {
+  margin: 1rem 0;
+}
+
+.modal-header {
+  background: lightblue;
+  padding: 3px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalClose {
+  font-size: 2rem;
+}
+
+.modalClose:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  color: black;
+}

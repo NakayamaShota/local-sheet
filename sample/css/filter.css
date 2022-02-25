@@ -1,0 +1,84 @@
+/* === フィルタボタン ============================ */
+.tfArea{
+  display    : inline-block;
+  position   : relative;
+}
+.tfImg{
+  display    : inline-block;
+  width      : 8px;
+  height     : 8px;
+  background : #eee;
+  border     : 1px solid #777;
+  margin     : 1px 3px;
+  padding    : 3px;
+  cursor     : pointer;
+}
+/* === フィルタボタン（カーソルオーバー時）======= */
+.tfImg:hover{
+  background : #FFD700;
+}
+/* === フィルタボタン内の画像色（SVG）============ */
+.tfImg path{
+  fill       : #777;
+}
+/* === フィルタリスト ============================ */
+.tfList{
+  display    : inline-block;
+  position   : fixed;
+  max-width  : 250px;
+  min-width  : 140px;
+  background : #fff;
+  border     : 1px solid #777;
+//  top        : 15px;
+//  left       : 0px;
+  line-height: 1.1;
+  font-weight: normal;
+}
+/* === フィルタリスト内のform ==================== */
+.tfList form{
+  max-height : 150px;           /* 縦幅 */
+  overflow   : scroll;
+  overflow   : overflow-y;
+  overflow   : auto;
+}
+/* === フィルタリスト内のチェックボックス ======== */
+.tfMeisai{
+  text-align : left;
+  padding    : 2px;
+}
+/* === フィルタリスト内の文字位置合わせ ========== */
+.tfMeisai label{
+  padding    : 0 10px 0 3px;
+}
+/* === OK/CANCELボタン =========================== */
+.tfBtnArea{
+  text-align : center;
+  font-size  : 8pt;
+  padding    : 3px 5px;
+}
+.tfBtnArea input{
+  display    : inline-block;
+  margin     : 0 5px;
+}
+/* === 含むボタンの入力エリア ==================== */
+.tfInStr{
+  padding    : 5px 3px;
+  border-top : 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.tfInStr input{
+  box-sizing : border-box;
+  width      : 100%;
+  padding    : 1px 3px;
+  font-weight: normal;
+  font-size  : 95%;
+  border     : 1px solid #ccc;
+}
+/* === フィルタ非表示 ============================ */
+#localSheet tr[cmanFilterNone]{
+  display    : none;
+}
+/* === フィルタ非表示行と次行の間を二重線にする == */
+#localSheet tr[cmanFilterNone] + tr td{
+  border-top : 3px double #777;
+}
